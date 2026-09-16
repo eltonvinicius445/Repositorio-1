@@ -22,8 +22,8 @@ export const BonusSection: React.FC = () => {
           {/* Bonus Banner Mockup */}
           <div className="mt-8 max-w-2xl mx-auto">
             <img
-              src="https://caminhovivamelhor.com.br/wp-content/uploads/2026/08/B-nus-4.png"
-              alt="Bonos Exclusivos Fábrica de Topos"
+              src="/toppers-pastel-personalizados.png"
+              alt="Bonos Exclusivos Fábrica de Topos - Toppers de Pastel Personalizados"
               className="w-full h-auto object-contain rounded-xl drop-shadow-md"
               loading="lazy"
               decoding="async"

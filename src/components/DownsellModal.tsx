@@ -23,20 +23,29 @@ export const DownsellModal: React.FC<DownsellModalProps> = ({ isOpen, onClose })
     'Garantía Total de 7 Días + Acceso Vitalicio'
   ];
 
+  const handleProceedToBasic = (e?: React.MouseEvent) => {
+    e?.preventDefault();
+    window.location.href = CHECKOUT_URLS.basic;
+  };
+
   return (
-    <div className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-3 sm:p-4 backdrop-blur-xs overflow-y-auto">
+    <div 
+      className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-3 sm:p-4 backdrop-blur-xs overflow-y-auto cursor-pointer"
+      onClick={() => { window.location.href = CHECKOUT_URLS.basic; }}
+    >
       <div 
-        className="relative w-full max-w-lg bg-white rounded-3xl p-6 sm:p-8 shadow-2xl border-4 border-amber-400 my-auto text-center"
+        className="relative w-full max-w-lg bg-white rounded-3xl p-6 sm:p-8 shadow-2xl border-4 border-amber-400 my-auto text-center cursor-default"
         onClick={e => e.stopPropagation()}
       >
         {/* Close Button */}
-        <button
-          type="button"
-          onClick={onClose}
+        <a
+          href={CHECKOUT_URLS.basic}
+          onClick={handleProceedToBasic}
           className="absolute top-4 right-4 p-1.5 rounded-full text-gray-400 hover:text-gray-700 hover:bg-gray-100 transition-colors cursor-pointer"
+          aria-label="Cerrar e ir al Plan Básico"
         >
           <X className="w-5 h-5" />
-        </button>
+        </a>
 
         {/* Warning / Urgency Pill */}
         <div className="inline-flex items-center gap-1.5 bg-amber-100 text-amber-900 px-4 py-1 rounded-full text-xs sm:text-sm font-black uppercase mb-3 border border-amber-300">

@@ -125,7 +125,7 @@ export const FAQS: FaqItem[] = [
 ];
 
 export const CHECKOUT_URLS = {
-  basic: 'https://pay.hotmart.com/V107589127U?off=tli2m0sk',
-  complete: 'https://pay.hotmart.com/V107589127U?off=xmdv11km',
-  downsell: 'https://pay.hotmart.com/V107589127U?off=t6efkpbu'
+  basic: 'https://pay.hotmart.com/V107589127U?off=tli2m0sk&checkoutMode=10',
+  complete: 'https://pay.hotmart.com/V107589127U?off=xmdv11km&checkoutMode=10',
+  downsell: 'https://pay.hotmart.com/V107589127U?off=t6efkpbu&checkoutMode=10'
 };

@@ -81,19 +81,14 @@ export const PricingSection: React.FC = () => {
             </div>
 
             {/* Basic CTA triggers upgrade popup */}
-            <a
+            <button
               id="btn-plano-basico"
-              href={CHECKOUT_URLS.basic}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={(e) => {
-                e.preventDefault();
-                setIsModalOpen(true);
-              }}
-              className="block w-full py-4 px-6 bg-gray-100 hover:bg-gray-200 text-gray-800 font-extrabold text-sm sm:text-base uppercase tracking-wider rounded-xl transition-all cursor-pointer border border-gray-300 text-center"
+              type="button"
+              onClick={() => setIsModalOpen(true)}
+              className="w-full py-4 px-6 bg-gray-100 hover:bg-gray-200 text-gray-800 font-extrabold text-sm sm:text-base uppercase tracking-wider rounded-xl transition-all cursor-pointer border border-gray-300 text-center"
             >
               QUIERO SOLO EL BÁSICO
-            </a>
+            </button>
           </div>
 
           {/* Plano Completo (Featured) */}
