@@ -1,0 +1,6 @@
+{
+  "name": "Kit Festas - Mega Arte Papelaria",
+  "description": "Fábrica de Topos de Cumpleaños. Crea topos de torta profesionales en menos de 5 minutos con el Método 3 Toques.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
