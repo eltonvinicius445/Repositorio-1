@@ -22,8 +22,8 @@ export const BonusSection: React.FC = () => {
           {/* Bonus Banner Mockup */}
           <div className="mt-8 max-w-2xl mx-auto">
             <img
-              src="/toppers-pastel-personalizados.png"
-              alt="Bonos Exclusivos Fábrica de Topos - Toppers de Pastel Personalizados"
+              src="/toppers-de-pastel.png"
+              alt="Bonos Exclusivos Fábrica de Toppers de Pastel"
               className="w-full h-auto object-contain rounded-xl drop-shadow-md"
               loading="lazy"
               decoding="async"
