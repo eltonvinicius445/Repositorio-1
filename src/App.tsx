@@ -26,7 +26,7 @@ export default function App() {
       <HeaderBanner />
 
       {/* 2. Hero Section with Responsive 16:9 Video (max-w 700-800px) */}
-      <HeroSection onCtaClick={scrollToPricing} />
+      <HeroSection onCtaClick={() => scrollToPricing()} />
 
       {/* 3. Kits Carousel Section */}
       <KitCarouselSection />
@@ -35,7 +35,7 @@ export default function App() {
       <WhatYouGetSection />
 
       {/* 5. Benefits & Pillars */}
-      <BenefitsSection onCtaClick={scrollToPricing} />
+      <BenefitsSection onCtaClick={() => scrollToPricing()} />
 
       {/* 6. Bonus Section */}
       <BonusSection />
@@ -47,7 +47,7 @@ export default function App() {
       <TestimonialsSection />
 
       {/* 9. Guarantee Section */}
-      <GuaranteeSection onCtaClick={scrollToPricing} />
+      <GuaranteeSection onCtaClick={() => scrollToPricing()} />
 
       {/* 10. FAQ Accordion */}
       <FaqSection />
@@ -56,7 +56,7 @@ export default function App() {
       <Footer />
 
       {/* 12. Sticky Mobile/Desktop Quick CTA Bar */}
-      <StickyCtaBar onCtaClick={scrollToPricing} />
+      <StickyCtaBar onCtaClick={() => scrollToPricing()} />
     </div>
   );
 }
